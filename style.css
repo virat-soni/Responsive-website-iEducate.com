@@ -1,0 +1,230 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@1,500&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.logo {
+    width: 20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo img {
+    width: 33%;
+    border-radius: 50px;
+}
+.btn{
+    padding: 3px 15px;
+    cursor: pointer;
+    border: none;
+    background: transparent;
+    border-radius: 3px;
+    border: 1px solid rgb(0, 0, 0);
+    margin: 5px;
+
+}
+
+.navbar {
+    display: flex;
+    align-items: center;
+    align-items: center;
+    position: sticky;
+    top:0;
+    cursor:pointer;
+}
+
+.nav-list {
+    width: 80%;
+    display: flex;
+    align-items: center;
+}
+
+.nav-list li {
+    list-style: none;
+    padding: 23 30;
+}
+
+.nav-list li a {
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+}
+
+.rightNav {
+
+    width: 40%;
+    text-align: right;
+}
+
+#search {
+    padding: 7 15;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+}
+
+.background {
+    background: rgba(255, 255, 255, 0.7) url("https://i.postimg.cc/1tmHVYFX/21.webp");
+    background-size: cover;
+    background-blend-mode: lighten;
+}
+
+.box-main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 45%;
+    margin: auto;
+    padding-top: 60px;
+    
+}
+.firstSection{
+    height: 110vh;
+}
+
+.firstHalf {
+    width: 80%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+
+}
+
+.secondHalf {
+    width: 30%;
+}
+.img2{
+    width: 150px;
+    border: 2px solid rgb(158, 190, 194);
+    border-radius: 50%;
+}
+.text-big{
+    font-size: 28px;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+.text-small{
+    font-size: 18px;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.section{
+    height: 350px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    max-width: 100%;
+    margin: auto;
+
+}
+.img3{
+    width: 190px;
+    margin-top: 10px;
+    border-radius: 10px;
+}
+.peras{
+    padding: 0 65px;
+}
+.section-Left{
+    flex-direction: row-reverse;
+}
+
+.contact{
+    background-color:rgb(235, 232, 228);
+    height:650px;
+}
+#text{
+    width: 100%;
+    padding: 5px 20px ;
+}
+
+.text-center{
+    text-align: center;
+    padding: 30px;
+    font-family: 'ubuntu',sans-serif;
+    font-size: 35px;
+}
+.form{
+  
+    max-width: 500px;
+    height: 534px;
+    margin: 0px auto;
+  
+}
+.form input{
+    margin: 21px 0;
+    padding: 6px 22px;
+    width: 100%;
+    font-size: 17px;
+    border: 2px solid grey;
+    border-radius: 4px;
+}
+.textarea{
+    margin: 20px 0;
+}
+.text-footer{
+    text-align: center;
+    padding: 30px 0;
+    font-family: 'ubuntu',sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.burger{
+    display: none;
+    position: absolute;
+    cursor: pointer;
+    right: 5%;
+    top:15px;
+
+
+}
+.line{
+    width: 33px;
+    background-color: white;
+    height: 4px;
+    margin: 5px 3px; 
+}
+@media only screen and (max-width:872px){
+    .nav-list{
+        flex-direction: column;
+    }
+    .navbar{
+        flex-direction: column;
+    }
+    .rightNav{
+        text-align: center;
+    }
+    #search{
+        width: 100%;
+    }
+    .burger{
+        display: block;
+    }
+    .h-nav{
+        height: 80;
+    }
+    .v-class{
+        opacity: 0;
+    }
+    .box-main{
+        flex-direction: column-reverse;
+        text-align: center;
+        max-width: 100%;
+
+    }
+    .secondHalf {
+        width: 50%;
+
+    }
+    .section{
+        height: 530px;
+        display: flex;
+        flex-direction: column-reverse;
+        margin: 100px auto;
+        text-align: center;        
+    }
+    .peras{
+        width: 100%;
+    }
+}
